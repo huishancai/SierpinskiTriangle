@@ -4,14 +4,18 @@ public void setup()
 }
 public void draw()
 {
+  background(0);
   sierpinski(5, 387, 400);
 }
 public void mouseDragged()//optional
 {
-
 }
 public void mouseClicked()
 {
+  int randomColorR = (int)((Math.random()*225)+30);
+  int randomColorG = (int)((Math.random()*225)+30);
+  int randomColorB = (int)((Math.random()*225)+30);
+  fill(randomColorR, randomColorG, randomColorB);
 }
 public void sierpinski(int x, int y, int len) 
 {
